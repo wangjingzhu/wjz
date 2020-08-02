@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单属性</title>
+</head>
+
+<body>
+	<form action="表格.html" method="get" autocomplete="on">
+		<table>                              <!--autopcomplete表示自动完成功能开关 --> 
+			<caption>自动完成表单</caption>
+			<tr>
+				<th>
+					<label for="id_form_username">用户名：</label>
+				</th>
+				<td>
+				<input type="text" name="name_form_username" id="id_from_username" required="required">
+					          <!-- required表示不能空信息 -->
+				</td>
+			</tr>
+			<tr>
+			    <th>
+				    <laber for="id_form_sex">性别：</laber>
+				</th>
+			    <td>
+				<input type="text" name="name_form_sex" id="id_form_sex" autocomplete="off" autofocus="autofocus">
+			    </td>                            <!--aotofocus表示自动获取焦点功能 -->
+		    </tr>
+		  <tr>
+				<th><label for="id_form_email">电子邮箱:</label></th>
+			<td>
+				<input type="email" name="name_form_email" id="id_form_email" value="" placeholder="wangjingzhu@qq.com" 
+					   pattern=".+qq\.com$">
+			</td></tr>      
+			<!--当value=“”空值时，加入placeholder属性显示提示信息   pattern表示邮箱的后缀格式 -->
+			<tr>
+			    <th>
+				<laber for="id_form_number">number inpu</laber></th>
+			    <td><input type="number" class="inputTxt64" name="name_form_number" id="id_form_number"
+						   min="0" max="100" step="5" required="required"></td></tr>
+			              <!--type常用类型还有输入框range、搜索search、网址url、日期选择器中date、month、week、time、datetime等等-->
+			<tr>
+			<td></td>
+			<td>
+			<input type="reset" value="重置">
+			<input type="submit" value="提交"> 
+			</td>
+	      </tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单</title>
+</head>
+	<form
+		  action="Untitled-1.html"
+		  method="get"
+		  target="_blank">
+	      <p>用户名：<input type="text" name="form_name"/></p>
+	      <input type="reset" value="重置">
+	      <input type="submit" value="提交">  
+	</form>
+	<form action="Untitled-1.html" method="get" target="_blank">
+	 <table>
+		<caption>文本域表单</caption>
+		<tr>
+		 <th>
+			<label for="id_from-username">用户名：</label>    <!--for中的值和后面id对应-->
+		 </th>
+		 <td>
+		<input type="text" name="name_form_username" id="id_form_username">
+		 </td>
+		</tr>
+		<tr>
+		 <th>
+			<label for="id_form_nickname">昵称：</label>
+		 </th>
+		 <td>
+		<input type="password" name="name_form_nickname" id="id_form_nickname">
+		 </td>
+	    </tr>
+		 <tr>
+			<th><label for="id_form_html">HTML语言</label></th>
+		<td><input type="radio" name="html_css_js" id="id_form_html" value="HTMl"></td> 
+			   <!-- password密码按钮  rabio单选按钮 checkbox多选按钮 -->
+		 </tr>
+		 <tr>
+		 </tr>
+		<tr>
+		 <td></td>
+		 <td>
+			<input type="reset" value="重置">
+			<input type="submit" valuse="提交"></td>
+		</tr>
+	</table> </form>
+	<form action="#" method="get" target="_self">
+	<table class="csstable">
+		<caption>下拉列表表单</caption>
+		<tr>
+		 <th>请选择您最喜欢的编程语言：</th>
+		</tr>
+		<tr>
+		 <td>
+			<select name="web">
+			 <option value="html">HTML</option>
+			 <option value="css">CSS</option>
+			 </select>
+		</td></tr>                                <!--textarea是多行文本域，row设置高度，cols设置宽度-->
+		<textarea                   
+				 name="name_textarea_web"     
+				  id="id_textarea_web"
+				  rows="5"
+				  cols="25"></textarea>
+		<tr>
+		 <td>
+			<input type="reset" value="重置">
+			<input type="submit" value="提交">
+		</td></tr></table></form>
+</html>

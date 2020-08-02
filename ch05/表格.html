@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+
+<body>
+ <p>
+	 &lt;table border="1"&gt;表格效果:<br>
+ </p>
+ <table border="1" cellspacing="0" cellpadding="10">    <!-- border表示边框，cellspacing表示格间距，cellpadding表示格子边距-->
+	<caption>表格标题</caption>
+	 <thead>
+	 <tr>
+		 <th>表头A</th>
+		 <th>表头B</th>
+		 <th>表头C</th>
+	</tr></thead>
+	<tfoot>
+	<tr>
+		<td>表注A</td>
+		<td>表注B</td>
+		<td>表注C</td>
+	</tr></tfoot>
+	<tbody>
+	<tr>
+		<td>row 1, cell 1</td>
+		<td>row 1, cell 2</td>
+		<td>row 1, cell 3</td>
+	</tr>
+	<tr>
+		<td>row 2, cell 1</td>
+		<td></td>
+		<td>row 2, cell 3</td>
+	</tr></tbody>
+</table>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; ">
+   <caption>跨行与跨列表格与表单颜色</caption>
+   <thead>
+   <tr bgcolor="#c8c8c8">                                <!-- bgcolor表示表单颜色 -->
+	   <th align="left">表头A</th>
+	   <th align="center">表头B</th>
+	   <th align="right">表头C</th>
+   </tr></thead>
+   <tbody>
+   <tr>
+	   <td colspan="2">row 1, cell 1 & 2</td>            <!-- colspan表示横跨的行数 -->
+	   <td rowspan="3" bgcolor="#a8a8a8">row 1 & 2 & 3, cell 3</td>        <!-- rowspan表示纵跨的行数 -->
+   </tr>
+   <tr>
+	   <td row rowspan="2">row 2 & 3, cell 1</td>
+	   <td>row 2, cell 2</td>
+   </tr>
+   <tr>
+	   <td>row 3, cell 2</td>
+   </tr></tbody></table>
+<table border="1">
+<thead>
+<tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+</tr>
+<tbody>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>          
+             <tabale border="1">
+              <tr>
+                 <td>1,1</td>
+                 <td>1,2</td></tr> 
+              <tr>
+                 <td>2,1</td>
+                 <td>2,2</td></tr></tabale></td>
+</tabale>
+</body>
+</html>

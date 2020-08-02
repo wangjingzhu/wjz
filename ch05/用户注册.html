@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="../ch06/用户注册.css">
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<h3>HTML表单 - 用户注册</h3><hr><br>
+	<form action="#" method="post" autocomplete="on">
+		<table>
+		<caption>用户注册</caption>
+		<tr>
+		<th>
+			<label for="id_form_username">用户名：</label></th>
+		<td>
+			<input type="text" class="inputTxt128" name="name_form_username" id="id_form_username" autofocus placeholder="请输入用户名..."></td>
+		<td class="td-s-small">用户名以字母开头，可以包含数字和下划线，7-14个字符。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_pwd">密码：</label></th>
+		<td>
+			<input type="password" class="inputTxt128" name="name_form_pwd" id="id_form_pwd" required 
+		     placeholder="请输入密码..."></td>
+		<td class="td-x-small">密码包含字母、数字下划线，7-14字符。必须项。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_repwd">确认密码：</label></th>
+		<td>
+			<input type="password" class="inputTxt128" name="name_form_repwd" id="id_for_repwd" placeholder="请确认密码..." required></td>
+		<td class="td-s-small">请再次输入密码确认，两次密码必须相同，必须项。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_email">电子邮箱：</label></th>
+		<td>
+			<input type="email" class="inputTxt128" name="name_form_email" id="id_form_email" required placeholder="请输入电子邮箱..."></td>
+		<td class="td-s-small">电子邮箱犹豫发送激活链接，必须项。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_birth">出生年月：</label></th>
+		<td>
+			<input type="month" class="inputTxt128" name="name_form_birth" id="id_form_birth" ></td>
+		<td class="td-s-small">出生年月。非必须项。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_number">毕业时间：</label></th>
+		<td>
+			<input type="number" class="inputTxt128" name="name_form_number" id="id_form_numbe" min="2000" max="3000"></td>
+		<td class="td-s-small">毕业时间（2000-）。非必须项。</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_form_range">工作年限：</label>
+		</th>
+		<td>
+			<input type="range" name="name_form_range" id="id_form_range" min="0" max="50"></td>
+		<td class="td-x-small">工作年限（0-50）。非必须项</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="id_for_url">个人主页: </label></th>
+		<td>
+			<input type="url" class="inputTxt128" name="name_form_url" id="id_form_url" placeholder="http://..."></td>
+		<td class="td-s-small">个人主页地址(http://...).非必须项目.</td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>
+			<input type="reset" value="重置">
+			<input type="submit" value="提交"></td>
+			<td></td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>
