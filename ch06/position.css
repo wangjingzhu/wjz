@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 32px;
+}
+h3{
+	margin: 160px;
+	padding:8px;
+}
+div{
+	margin: 32px;
+	padding: 2px;
+}

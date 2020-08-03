@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+header h3{
+	text-align: center;
+}
+form#id-form{
+	margin: 8px;
+	padding: 8px;
+	border: 1px solid #e8e8e8;
+	background-color: #f8f8f8;
+}
+table{
+	border: 0px solid #fff;
+	font-size: medium;
+	font-family: Times New Roman, serif;
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+}
+table caption{
+	font-size: medium;
+	font-family: "Times New Roman",Times,serif;
+	font-weight: bold;
+	letter-spacing: 8px;
+	margin: 8px;
+	padding: 2px;
+}
+tr>th{
+	font-size: small;
+	font-family: Verdana;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+	text-align: left;
+}
+td+td{
+	font-size: small;
+	font-family: Verdana;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+	text-align: right;
+}
+table td.td-x-small{
+	font-size: x-small;
+	font-family: Verdana;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 8px;
+	padding: 8px;
+	color: #808080;
+	text-align: left;
+}
+input:focus{
+	background-color: #f0f0f0;
+}
+input[type="text"]{
+	width: 128px;
+}
+input[type="password"]{
+	width: 128px;
+}
+input.inputTxt128{
+	width: 128px;
+}
+input.inputTxt64{
+	width: 64px;
+}
+input[value]{
+	font-size: medium;
+	font-family: 'Microsoft Yahei';
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin: 4px;
+	padding: 4px;
+	color: #666;
+}
+a:link{
+	color: #FF0000;
+	font: normal 12px/1.2em 宋体;
+}
+a:visited{
+	color: #00ff00;
+	font: normal 12px/1.2em 宋体;
+}
+a:hover{
+	color: #FF00ff;
+	font: normal 20px/1.6em 宋体；
+}
+a：active{
+	color: #0000ff;
+	font: normal 24px/1.6em 宋体;
+}
