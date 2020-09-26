@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="light" src="../img/off.gif" >
+    <script>
+        let light = document.getElementById("light");
+        var flag = false;  //默认false
+        light.onclick = function () {
+            if (flag){
+                light.src = "../img/off.gif";
+                flag = false;
+            }else {   //false时候，打开灯，然后变true
+                light.src = "../img/on.gif";
+                flag = true;
+            }
+        }
+    </script>
+</body>
+</html>

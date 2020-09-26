@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>element对象</title>
+</head>
+<body>
+<a>超链接</a>
+<input type="button" value="设置属性" id="bt_set">
+<input type="button" value="删除属性" id="bt_rem">
+    <script>
+        let elebt_set = document.getElementById("bt_set");
+        elebt_set.onclick = function(){
+            let element_set = document.getElementsByTagName("a")[0];
+            element_set.setAttribute("href","http://www.baidu.com");
+        }
+        let elebt_rem = document.getElementById("bt_rem");
+        elebt_rem.onclick=function(){
+            let element_set = document.getElementsByTagName("a")[0];
+            element_set.removeAttribute("href");
+        }
+
+
+
+    </script>
+</body>
+</html>

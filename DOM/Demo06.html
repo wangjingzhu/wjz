@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node对象</title>
+    <STYLE>
+        div{
+            border:1px solid red;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+        }
+        #div3{
+            width: 50px;
+            height: 50px;
+        }
+    </STYLE>
+</head>
+<body>
+    <div id="div1">
+    <div id="div2">div2</div>
+        div1</div>
+    <a href="javascript:void(0);" id="del">超链接</a>
+    <a href="javascript:void(0);" id="set">添加</a>
+<script>
+    let del = document.getElementById("del");
+    del.onclick = function () {
+        let ele_div1 = document.getElementById("div1");
+        let ele_div2 = document.getElementById("div2");
+        ele_div1.removeChild(ele_div2);   //删除div2
+    }
+    let set = document.getElementById("set");
+    set.onclick = function () {
+        let ele_div1 = document.getElementById("div1");
+        let ele_div3 = document.createElement("div");  //没有div3创建一个
+        ele_div3.setAttribute("id","div3");
+        ele_div1.appendChild(ele_div3);   //添加一个div3
+
+    }
+</script>
+</body>
+</html>
