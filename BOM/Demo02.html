@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+<input id="openBtn" type="button" value="打开窗口">
+<input id="closeBtn" type="button" value="关闭窗口">
+<script>
+        let openBtn = document.getElementById("openBtn");
+        var newindow;
+        openBtn.onclick = function () {
+            newindow = open("http://www.baidu.com");
+        }
+        let closeBtn = document.getElementById("closeBtn");
+        closeBtn.onclick = function() {
+           newindow.close();
+        }
+        let id = setTimeout(fun,2000); /*一次定时器*/
+        clearTimeout(id)              /*一次定时器取消*/
+
+        let id = setInterval(fun,2000);  /*循环定时器*/
+        clearInterval(id);              /*循环定时器取消*/
+
+        function fun() {
+            alert("boom!");
+        }
+</script>
+
+</body>
+</html>

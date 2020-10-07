@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+</head>
+<body><input type="button" value="刷新" id="bt1">
+      <input type="button" value="去页面" id="bt2">
+     <script>
+         let bt1 = document.getElementById("bt1");
+         bt1.onclick = function () {
+             location.reload()     /*刷新*/
+         }
+         let bt2 = document.getElementById("bt2");
+         bt2.onclick = function () {
+             location.href= "https://www.baidu.com";    /*href设置或返回URL*/
+         }
+
+
+     </script>
+
+</body>
+</html>
