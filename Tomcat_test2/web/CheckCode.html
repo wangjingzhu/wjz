@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <SCRIPT>
+        window.onload = function{
+            let change = document.getElementById("change");
+            change.onclick = function () {
+                var date = new Date().getTime();
+                change.src = "/WJZ3/CheckCodeServlet"+date;
+            }
+        }
+
+    </SCRIPT>
+</head>
+<body>
+    <img id="checkCode" src="/WJZ3/CheckCodeServlet"/>
+
+    <a id="change" href="">看不清换一张？</a>
+
+</body>
+</html>
